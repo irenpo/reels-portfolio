@@ -17,6 +17,8 @@ export const profile = {
   telegramName: '@irenpo',
   phone: '+79267088226',
   phoneLabel: '+7 926 708-82-26',
+  footerEyebrow: 'Есть идея?',
+  footerHeading: ['Ваш продукт — в кадр.', 'Покупателя — в директ.'],
 }
 
 // Порядок элементов здесь определяет порядок карточек в галерее.
@@ -31,4 +33,28 @@ export const videos: PortfolioVideo[] = [
   { id: 'portfolio-07', src: './videos/portfolio-07.mp4', poster: './posters/portfolio-07.webp', title: 'Работа 07', aspectRatio: '9 / 16' },
   { id: 'portfolio-08', src: './videos/portfolio-08.mp4', poster: './posters/portfolio-08.webp', title: 'Работа 08', aspectRatio: '9 / 16' },
   { id: 'portfolio-09', src: './videos/portfolio-09.mp4', poster: './posters/portfolio-09.webp', title: 'Работа 09', aspectRatio: '1054 / 1980' },
+]
+
+export const medicalProfile = {
+  name: 'Ирина Пономарева',
+  mark: 'MED / REELS',
+  eyebrow: 'Видеоконтент для клиник',
+  heading: 'Медицина, которую не пролистывают.',
+  description:
+    'Снимаю рилс для клиник и врачей: показываю сложные процедуры, операции и экспертные объяснения понятно, точно и без медицинского канцелярита.',
+  telegram: 'https://t.me/irenpo',
+  telegramName: '@irenpo',
+  phone: '+79267088226',
+  phoneLabel: '+7 926 708-82-26',
+  footerEyebrow: 'Есть экспертиза?',
+  footerHeading: ['Экспертизу — в кадр.', 'Пациента — на консультацию.'],
+}
+
+export const medicalVideos: PortfolioVideo[] = [
+  { id: 'medical-01', src: '../medical-videos/medical-01.mp4', poster: '../medical-posters/medical-01.webp', title: 'PRP-терапия', aspectRatio: '1054 / 1920' },
+  { id: 'medical-02', src: '../medical-videos/medical-02.mp4', poster: '../medical-posters/medical-02.webp', title: 'Инсульт', aspectRatio: '1056 / 1920' },
+  { id: 'medical-03', src: '../medical-videos/medical-03.mp4', poster: '../medical-posters/medical-03.webp', title: 'Коррекция косоглазия', aspectRatio: '1054 / 1920' },
+  { id: 'medical-04', src: '../medical-videos/medical-04.mp4', poster: '../medical-posters/medical-04.webp', title: 'ЛОР и стоматологическая операция', aspectRatio: '1054 / 1920' },
+  { id: 'medical-05', src: '../medical-videos/medical-05.mp4', poster: '../medical-posters/medical-05.webp', title: 'Операция на мозге', aspectRatio: '1054 / 1920' },
+  { id: 'medical-06', src: '../medical-videos/medical-06.mp4', poster: '../medical-posters/medical-06.webp', title: 'Инфузионная помпа', aspectRatio: '1054 / 1920' },
 ]

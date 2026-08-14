@@ -138,6 +138,14 @@ button { font: inherit; }
 
 .gallery { columns: 4; column-gap: clamp(12px, 1.6vw, 24px); }
 
+body[data-portfolio='medical'] .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(12px, 1.6vw, 24px);
+}
+
+body[data-portfolio='medical'] .video-card { margin: 0; }
+
 .video-card {
   position: relative;
   break-inside: avoid;
@@ -291,6 +299,7 @@ button { font: inherit; }
 
 @media (max-width: 1080px) {
   .gallery { columns: 3; }
+  body[data-portfolio='medical'] .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .hero { min-height: auto; }
 }
 
@@ -301,6 +310,7 @@ button { font: inherit; }
   .hero { padding-top: 88px; }
   .hero__footer { grid-template-columns: 1fr; align-items: start; }
   .gallery { columns: 2; }
+  body[data-portfolio='medical'] .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .contact { min-height: 580px; }
   .contact__bottom { grid-template-columns: 1fr 1fr; }
   .contact__bottom span { grid-column: 1 / -1; }
@@ -308,6 +318,7 @@ button { font: inherit; }
 
 @media (max-width: 360px) {
   .gallery { columns: 1; }
+  body[data-portfolio='medical'] .gallery { grid-template-columns: 1fr; }
   .hero h1 { font-size: 52px; }
   .hero__footer { margin-top: 48px; }
   .video-card__play { width: 42px; height: 42px; }

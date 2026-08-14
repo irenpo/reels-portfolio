@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && vite build --config vite.medical.config.ts",
     "preview": "vite preview",
     "posters": "node scripts/generate-posters.mjs"
   },

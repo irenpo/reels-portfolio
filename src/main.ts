@@ -1,5 +1,15 @@
 import './style.css'
-import { profile, videos, type PortfolioVideo } from './data'
+import {
+  medicalProfile,
+  medicalVideos,
+  profile as defaultProfile,
+  videos as defaultVideos,
+  type PortfolioVideo,
+} from './data'
+
+const isMedicalPortfolio = document.body.dataset.portfolio === 'medical'
+const profile = isMedicalPortfolio ? medicalProfile : defaultProfile
+const videos = isMedicalPortfolio ? medicalVideos : defaultVideos
 
 const app = document.querySelector<HTMLDivElement>('#app')
 
@@ -40,8 +50,8 @@ app.innerHTML = `
   </main>
 
   <footer class="contact reveal">
-    <p class="eyebrow">Есть идея?</p>
-    <h2>Ваш продукт — в кадр.<br>Покупателя — в директ.</h2>
+    <p class="eyebrow">${profile.footerEyebrow}</p>
+    <h2>${profile.footerHeading.join('<br>')}</h2>
     <div class="contact__bottom">
       <a href="tel:${profile.phone}">${profile.phoneLabel}</a>
       <a href="${profile.telegram}" target="_blank" rel="noreferrer">Telegram ${profile.telegramName} ↗</a>
