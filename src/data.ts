@@ -7,7 +7,7 @@ export interface PortfolioVideo {
 }
 
 export const profile = {
-  name: 'Ваше имя',
+  name: 'Ирина Пономарева',
   mark: 'REELS / 26',
   eyebrow: 'Видеопортфолио',
   heading: 'Реклама, которую забыли пролистнуть.',
