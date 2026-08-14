@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио видеографа — рилс для экспертов и брендов, которые попадают в тренды." />
+    <meta name="theme-color" content="#f5f3ef" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%23141414%22/><path d=%22M38 29l35 21-35 21z%22 fill=%22%23fff%22/></svg>" />
+    <title>Reels — видеопортфолио</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      if (location.protocol === 'file:' && !location.pathname.includes('/dist/')) {
+        window.addEventListener('DOMContentLoaded', () => {
+          document.body.innerHTML = `
+            <main style="min-height:100vh;display:grid;place-items:center;padding:24px;background:#f5f3ef;color:#151515;font-family:Arial,sans-serif">
+              <section style="max-width:620px;text-align:center">
+                <p style="margin:0 0 18px;font-size:12px;letter-spacing:.16em;text-transform:uppercase">Видеопортфолио</p>
+                <h1 style="margin:0 0 22px;font-size:clamp(38px,7vw,76px);line-height:.98;letter-spacing:-.055em">Вы открыли исходный файл</h1>
+                <p style="margin:0 auto 32px;max-width:500px;font-size:18px;line-height:1.5">Готовая автономная версия находится в папке dist и открывается без сервера.</p>
+                <a href="./dist/index.html" style="display:inline-flex;align-items:center;min-height:52px;padding:0 24px;border-radius:100px;background:#151515;color:#fff;text-decoration:none;font-weight:600">Открыть готовый сайт →</a>
+              </section>
+            </main>`
+        })
+      }
+    </script>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
